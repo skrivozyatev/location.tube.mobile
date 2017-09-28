@@ -1,0 +1,33 @@
+<resources>
+	<string name="default_url">http://10.0.2.2:8080/api/</string>
+	<string name="app_name">Location Tube</string>
+	<string name="title_activity_maps">Location Tube</string>
+	<string name="url">URL</string>
+	<string name="phone">Phone</string>
+	<string name="my_location_refresh_interval_s">My location refresh interval, s</string>
+	<string name="locations_refresh_interval_s">Locations refresh interval, s</string>
+	<string name="my_location_accuracy_m">My location accuracy, m</string>
+	<string name="save">Save</string>
+	<string name="settings_menu_item">Settings</string>
+	<string name="url_pref_key">url</string>
+	<string name="phone_pref_key">phone</string>
+	<string name="my_location_scan_interval_pref_key">my_location_scan_interval</string>
+	<string name="locations_refresh_interval_pref_key">locations_refresh_interval</string>
+	<string name="location_accuracy_pref_key">location_accuracy</string>
+	<string name="location_setup_duration_pref_key">location_setup_duration</string>
+	<string name="title_activity_test_maps">Map Test</string>
+	<string name="publish_switch_pref_key">publish_switch</string>
+	<string name="title_activity_log">LogActivity</string>
+	<string name="log_menu_item">Log</string>
+	<string name="log_switch_item_title">Log</string>
+	<string name="log_title">Location Tube Log</string>
+	<string name="last_marker_date">Last date</string>
+	<string name="contacts_menu_item">Contacts</string>
+	<string name="add_contact_menu_item_name">Add contact</string>
+	<string name="contacts_title">Location Tube Contacts</string>
+	<string name="contact_item_name_text">Name</string>
+	<string name="contact_item_phone_text">Phone</string>
+	<string name="contact_image_desc">Contact Image</string>
+	<string name="add_contact_no_phone">The contact %s has no phone number and won\'t be added</string>
+	<string name="contacts_context_menu_delete_name">Delete</string>
+</resources>

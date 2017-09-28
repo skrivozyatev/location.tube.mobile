@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+                  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:defaultValue="@string/default_url"
+        android:inputType="text"
+        android:key="@string/url_pref_key"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="URL of a Location Tube server"
+        android:title="URL"
+        android:visibility="visible"/>
+    <EditTextPreference
+        android:inputType="phone"
+        android:key="@string/phone_pref_key"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="My phone number"
+        android:title="Phone"/>
+    <EditTextPreference
+        android:defaultValue="5"
+        android:inputType="number"
+        android:key="@string/locations_refresh_interval_pref_key"
+        android:numeric="integer"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="Locations refresh interval in seconds"
+        android:title="Refresh interval"/>
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/publish_switch_pref_key"
+        android:summary="Publish my location"
+        android:title="Publish"/>
+    <EditTextPreference
+        android:defaultValue="60"
+        android:inputType="number"
+        android:key="@string/my_location_scan_interval_pref_key"
+        android:numeric="integer"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="My location scan interval in seconds"
+        android:title="Scan interval"/>
+    <EditTextPreference
+        android:defaultValue="50"
+        android:inputType="number"
+        android:key="@string/location_accuracy_pref_key"
+        android:numeric="integer"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="My location accuracy in meters"
+        android:title="Location accuracy"/>
+    <EditTextPreference
+        android:defaultValue="1"
+        android:inputType="number"
+        android:key="@string/location_setup_duration_pref_key"
+        android:numeric="integer"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="Location refinement interval in seconds"
+        android:title="Location setup duration"/>
+</PreferenceScreen>
