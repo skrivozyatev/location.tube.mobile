@@ -48,7 +48,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 	private static final String[] APP_PERMISSIONS = new String[] {
 			Manifest.permission.READ_SMS,
 			Manifest.permission.ACCESS_COARSE_LOCATION,
-			Manifest.permission.ACCESS_FINE_LOCATION};
+			Manifest.permission.ACCESS_FINE_LOCATION,
+			Manifest.permission.READ_CONTACTS
+	};
 
 	private GoogleMap mMap;
 	private LocationRequestService locationRequestService;
