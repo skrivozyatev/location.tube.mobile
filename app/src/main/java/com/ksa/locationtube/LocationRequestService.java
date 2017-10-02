@@ -1,7 +1,5 @@
 package com.ksa.locationtube;
 
-import android.content.Context;
-import android.graphics.Bitmap;
 import android.os.Handler;
 
 import com.google.android.gms.maps.GoogleMap;
@@ -13,7 +11,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.io.IOException;
 import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -24,6 +21,8 @@ import ksa.location.tube.client.Result;
 import ksa.location.tube.client.RetrofitClient;
 import ksa.location.tube.model.Location;
 import ksa.location.tube.model.UserLocation;
+
+import static com.ksa.locationtube.Common.getCircledBitmap;
 
 /**
  * Created by Sergey Krivozyatev on 19.07.2017 11:23
@@ -120,7 +119,8 @@ public class LocationRequestService {
 							Contact contact = Data.getContact(userLocation.getPhone());
 							if (contact != null) {
 								if (contact.hasBitmap()) {
-									BitmapDescriptor bitmapDescriptor = BitmapDescriptorFactory.fromBitmap(contact.getBitmap());
+									BitmapDescriptor bitmapDescriptor = BitmapDescriptorFactory
+											.fromBitmap(getCircledBitmap(contact.getBitmap()));
 									marker.setIcon(bitmapDescriptor);
 								}
 							}
